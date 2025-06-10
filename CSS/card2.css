@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --height: 200px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    height: var(--height);
+    font-weight: 560;
+    font-size: 0.8rem;
+    width: calc(var(--height) *2/3);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 0.3rem;
+    color: red;
+    padding: 0.5rem;
+
+}
+.left, .right {
+    flex-grow: 1;
+    font-size: 1.3rem;
+}
+.middle {
+    flex-grow: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    row-gap: 2.3rem;
+}
+.middle div {
+    font-size: 3rem;
+}
+.right {
+    transform: rotate(180deg);
+}
+.oposite {
+    transform: rotate(180deg);
+}
+.left .heart ,.right .heart{
+    margin-top: -0.4rem;
+    font-size: 1.5rem;
+}

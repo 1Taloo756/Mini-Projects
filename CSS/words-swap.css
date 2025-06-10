@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph {
+    display: flex;
+    column-gap: 1rem;
+}
+p {
+    font-size: 6rem;
+    font-weight: 900;
+}
+.words {
+    font-size: 6rem;
+    font-weight: 900;
+    color: white;
+    background-color: blue;
+    padding: 0.1rem 1.8rem;
+    border-radius: 1rem;
+
+}
+.words::after {
+    content: 'cats';
+    animation: changing-words;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes changing-words {
+    33%{
+        content: 'coding';
+    }
+    66%{
+        content: 'scrimba';
+    }
+    99%{
+        content: 'singing';
+    }
+}
