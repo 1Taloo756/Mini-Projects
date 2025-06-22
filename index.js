@@ -169,7 +169,91 @@ const wordsSwap=`
         <div class="words-swap"></div>
     </div>
 `;
+const mainPage=`
+<section class="main-page">
+        <button class="main-button" data-id="animation">Animation</button>
+        <button class="main-button" data-id="card-flip">Card Flip</button>
+        <button class="main-button" data-id="card-1">Card 1</button>
+        <button class="main-button" data-id="card-2">Card 2</button>
+        <button class="main-button" data-id="flag-1">Flag 1</button>
+        <button class="main-button" data-id="flag-2">Flag 2</button>
+        <button class="main-button" data-id="flag-3">Flag 3</button>
+        <button class="main-button" data-id="flag-4">Flag 4</button>
+        <button class="main-button" data-id="loading-bar">Loading Bar</button>
+        <button class="main-button" data-id="loading-video">Loading Video</button>
+        <button class="main-button" data-id="nested-circles">Nested Circles</button>
+        <button class="main-button" data-id="profile">Profile</button>
+        <button class="main-button" data-id="profile-card">Profile card</button>
+        <button class="main-button" data-id="search-button">Search Button</button>
+        <button class="main-button" data-id="instagram-stories">Instagram Stories</button>
+        <button class="main-button" data-id="styling-button">Styling Button</button>
+        <button class="main-button" data-id="toggle-button">Toggle Button</button>
+        <button class="main-button" data-id="words-swap">Words Swap</button>
+</section>
+`;
+document.querySelector('.header').addEventListener('click',()=>{
+    document.querySelector('main').innerHTML=mainPage;
+document.querySelectorAll(".main-button").forEach(button => {
+    button.addEventListener('click', ()=>{
+        id= button.dataset.id;
+        if(id =='animation'){
+            document.querySelector('main').innerHTML=animation;
+        }
+        else if (id =='card-flip') {
+            document.querySelector('main').innerHTML=cardFlip;
+        }
+        else if (id =='card-1') {
+            document.querySelector('main').innerHTML=card1;
+        }
+        else if (id =='card-2') {
+            document.querySelector('main').innerHTML=card2;
+        }
+        else if (id =='flag-1') {
+            document.querySelector('main').innerHTML=flag1;
+        }
+        else if (id =='flag-2') {
+            document.querySelector('main').innerHTML=flag2;
+        }
+        else if (id =='flag-3') {
+            document.querySelector('main').innerHTML=flag3;
+        }
+        else if (id =='flag-4') {
+            document.querySelector('main').innerHTML=flag4;
+        }
+        else if (id =='loading-bar') {
+            document.querySelector('main').innerHTML=loadingBar;
+        }
+        else if (id =='loading-video') {
+            document.querySelector('main').innerHTML=laodingVideo;
+        }
+        else if (id =='nested-circles') {
+            document.querySelector('main').innerHTML=nestedCircles;
+        }
+        else if (id =='profile') {
+            document.querySelector('main').innerHTML=profile;
+        }
+        else if (id =='profile-card') {
+            document.querySelector('main').innerHTML=profileCard;
+        }
+        else if (id =='search-button') {
+            document.querySelector('main').innerHTML=searchButton;
+        }
+        else if (id =='instagram-stories') {
+            document.querySelector('main').innerHTML=stories;
+        }
+        else if (id =='styling-button') {
+            document.querySelector('main').innerHTML=stylingButton;
+        }
+        else if (id =='toggle-button') {
+            document.querySelector('main').innerHTML=switchButton;
+        }
+        else if (id =='words-swap') {
+            document.querySelector('main').innerHTML=wordsSwap;
+        }
 
+    });  
+});
+});
 document.querySelectorAll(".main-button").forEach(button => {
     button.addEventListener('click', ()=>{
         id= button.dataset.id;
