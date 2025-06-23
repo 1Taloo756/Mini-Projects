@@ -314,3 +314,13 @@ document.querySelectorAll(".main-button").forEach(button => {
 
     });  
 });
+let mode=localStorage.getItem('Theme')||'dark';
+document.querySelector('.light').addEventListener('click', ()=>{
+    mode='light';
+    localStorage.setItem('Theme', mode);
+});
+document.querySelector('.dark').addEventListener('click', ()=>{
+    mode='dark';
+    localStorage.setItem('Theme', mode);
+});
+document.getElementById(`${mode}`).checked= true;
